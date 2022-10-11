@@ -8,7 +8,7 @@ import statisticalData from './Data/data';
 import { FriendList } from 'components/FriendList/FriendList';
 import friends from './Data/friends';
 
-import TransactionHistory from './components/TransactionHistory/TransactionHistory';
+import { TransactionHistory } from 'components/TransactionHistory/TransactionHistory';
 import transactions from './Data/transactions';
 
 export const App = () => {
@@ -16,10 +16,12 @@ export const App = () => {
     <div>
       <Profile user={user} />
 
-      <Statistics title="Upload stats" stats={statisticalData}/>
+      <Statistics title="Upload stats" stats={statisticalData} />
+      
       <FriendList friends={friends} />
+
+      <TransactionHistory items={transactions} />
     </div>
-    
-          //   <TransactionHistory items={transactions} />
+           
   );
 };
