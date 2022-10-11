@@ -1,0 +1,10 @@
+.friends-list {
+  display: flex;
+  flex-direction: column;
+
+  width: 600px;
+
+  margin: 0 auto;
+  
+  background-color: #ffffff;
+}
